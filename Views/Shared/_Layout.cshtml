@@ -1,0 +1,1105 @@
+﻿@using SoftwareCompany.Models
+@inject SoftwareCompany.Services.SettingsService SettingsService;
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>SoftwareCompany</title>
+        <!-- Google Font -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+            rel="stylesheet">
+    <!-- Bootstrap 4.2.1 -->
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet">
+   
+    <!-- css Icon Font -->
+    <link href="/csss/vendor/ecicons.min.css" rel="stylesheet" />
+    
+    
+
+    <!-- Main Style -->
+    
+    
+    <link rel="stylesheet" href="/csss/all.css" asp-append-version="true" />
+    
+        <!-- Main CSS -->
+
+<link href="/css/main.css" rel="stylesheet" />
+
+       
+    </head>
+    <body>
+        <!-- Page Loading -->
+        <div class="se-pre-con"></div>
+
+        <!-- ========== Start Navbar ========== -->
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+            <div class="container">
+                @*<a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>*@
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#Services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Slider">Slider</a>
+                    </li>
+                   @* <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>*@
+                    </li>
+
+                    @*<li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Services" asp-action="Index">Services</a>
+                    </li>*@
+
+                    
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+
+                   @* <li class="nav-item">
+                        <a class="nav-link" href="#Create">Create</a>
+                    </li>*@
+                   
+
+                                      
+
+                        @*<li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#benefits">Benefits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#price">Price</a>
+                        </li>*@
+                       @* <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>*@
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ========== End Navbar ========== -->
+
+        <!-- ========== Start Slider ========== -->
+    <section class="slider d-flex align-items-center" id="home">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row d-flex align-items-center mt-60">
+                <div class="col-lg-6">
+                    <div class="text">
+                        <h1 class="h1-w mb-20">Best way to chat to your customers using bux</h1>
+                        <p class="p-w mb-30">
+                            Why I say old chap that is spiffing off his nut arse pear
+                            shaped plastered Jeffrey bodge barney some dodgy chav cockup sloshed up the duff
+                            starkers cheeky bugger
+                        </p>
+                        @*                            <a href="#" class="btn-white d-inline-block">Get Started</a>
+                        *@
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image d-flex justify-content-lg-end">
+                        <img src="https://cdn.mosoah.com/wp-content/uploads/2019/11/27152511/%D8%B5%D9%88%D8%B1-%D8%A8%D8%B1%D9%85%D8%AC%D8%A91.jpg" alt="slider-phone" class="img-fluid ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about m-section-120" id="about">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="image pr-4">
+                        <img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg" alt="about" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="h2 mb-20">
+                        An introductory profile of the professional company
+                    </h2>
+                    <p class="p-bk mb-30">
+                        The professional company was established in 2004 and since then it is one of the leading companies in the field of developing software, web applications and websites. We produce technical solutions for different business sectors characterized by a professional, flexible and easy-to-use interface. And not only that, we also provide our customers with unique and elegant designs for websites, and we also provide them with highly efficient hosting services, which enables them to stand out in the Internet space.
+
+                        The professionalism of the professional lies in providing simple and effective technical systems to our customers, which allowed us to expand our activities and improve the quality of our products within a short period of time. Softex is currently moving towards producing web systems and applications that depend mainly on the Internet.
+                    </p>
+                    @*                        <a href="#" class="btn-color d-inline-block">Read More</a>
+                    *@
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="Services m-section-120" id="Services">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="image pr-4">
+                        <img src="~/img/خدماتنا1.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="h2 mb-20">
+                        Services
+                    </h2>
+                    <h3 class="h2 mb-20">
+                        Programming and designing websites
+                    </h3>
+                    <p class="p-bk mb-30">
+The website has the ability to improve your image
+
+
+                         Small businesses can have a presence on the Internet and thus can compete with other large organizations
+                         Design your own website in order to benefit from giving a good image to your business through the Internet. Through the website, you have a high ability to increase production. Through the website, you can improve your business's ability to compete with others. Designing a good website for large organizations strengthens their role and increases The importance of the institution and its business opportunities, and this helps it to compete with other institutions that provide the same services
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider d-flex align-items-center" id="Services">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row d-flex align-items-center ">
+                <div class="col-lg-6">
+                    <div class="text">
+                        <h2 class="h1-w mb-20">Programming and designing mobile applications</h2>
+                        <p class="p-w mb-30">
+                            What is the benefit that will accrue to you from programming and designing mobile applications?
+
+
+                            Mobile applications are one of the most powerful marketing methods used by companies today. The application in its general form is a program that remains on the user’s device 24 hours a day, so having an application for your products and services provides you with a golden opportunity for the user to keep seeing it whenever he uses his smart phone.
+
+                            You may be surprised if you know that in our Arab countries alone, access to the Internet through smart phones represents more than 40% of the total income. Also, 41% of online purchases are made using smartphones and mobile applications. And by 2016, it is expected that the total spend on marketing operations through smart phones alone in the Middle East will reach $ 2.8 billion.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image d-flex justify-content-lg-end">
+                        <img src="~/img/خدماتنا 2.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Services m-section-120" id="Services">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="image pr-4">
+                        <img src="~/img/خدماتنا 4.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                    <h3 class="h2 mb-20">
+                        Graphic Design
+
+                    </h3>
+                    <p class="p-bk mb-30">
+Graphic design, or what is called the art of visual communication, is a creative method used by the designer to deliver a specific message to customers and the public. The field of graphic design includes many disciplines, including graphic videos, graphics, logos, character design, and animation.
+
+                         What distinguishes us in graphic design
+                         The most important thing that distinguishes graphic designs is that they are characterized by art, creativity, and the creation of modern ideas. Therefore, the graphic designer must have the ability to innovate and create, and not only stop at what the client requests from him, but he must create a modern design that distinguishes it from other designers.
+
+                         Why graphic design is so important?
+                         If you have a company or products and want to reach a larger category of target customers, then professional designs are the first step to your success, especially if you are planning e-marketing campaigns.
+
+
+                         Create your own attractive graphic designs
+
+
+                         We will build your visual identity that is unique and appropriate for your business, and our services will not only be limited to the website but also to your accounts on social networks, in addition to
+                         Providing personal and business cards. So what are you waiting for? Contact us and get your professional design done.                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider d-flex align-items-center" id="Services">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row d-flex align-items-center ">
+                <div class="col-lg-6">
+                    <div class="text">
+                        <h2 class="h1-w mb-20">Digital marketing services</h2>
+                        <p class="p-w mb-30">
+                            Our digital marketing services include preparing a digital marketing plan document including a situation analysis
+                            The current presence of your project on the Internet, analysis of the activities of the most prominent competitors, and agreement on the goals that you want to achieve during the contract period
+
+                            We define the target audience segments and focus on the most appropriate segments, while defining profiles
+                            Customer personality and setting a schedule for producing and publishing appropriate content on social media accounts.
+
+                            We also create and manage advertising campaigns on social media platforms and on an advertising platform
+                            Google with choosing the types of advertising campaigns appropriate to the stages of the customer journey and creating custom audiences
+                            and re-targeting
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image d-flex justify-content-lg-end">
+                        <img src="~/img/خدماتنا 3.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Common Section -->
+    <!-- footer section -->
+    <!-- ========== Start Contact ========== -->
+   
+    <!-- ========== End Contact ========== -->
+       
+        <!-- ========== End Slider ========== -->
+
+        <!-- ========== Start About ========== -->
+        
+        <!-- ========== End About ========== -->
+
+        <!-- ========== Start Features ========== -->
+        @*<section class="features" id="features">
+            <div class="container">
+                <div class="row">
+                    <!-- Box-1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="box mb-40">
+                            <img src="img/features/fe-1.png" alt="icon-1">
+                            <h3 class="h3-bk mb-15 mt-15">Export Presets</h3>
+                            <p class="p-bk">
+                                Bog cheeky bugger blow off only a quid
+                                <br>
+                                grub he legged it porkies tosser young
+                                <br>
+                                delinquent argy-bargy.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Box-2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="box mb-40">
+                            <img src="img/features/fe-2.png" alt="icon-1">
+                            <h3 class="h3-bk mb-15 mt-15">Grid and Guides</h3>
+                            <p class="p-bk">
+                                Bog cheeky bugger blow off only a quid
+                                <br>
+                                grub he legged it porkies tosser young
+                                <br>
+                                delinquent argy-bargy.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Box-3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="box mb-40">
+                            <img src="img/features/fe-3.png" alt="icon-1">
+                            <h3 class="h3-bk mb-15 mt-15">Pixel Precision</h3>
+                            <p class="p-bk">
+                                Bog cheeky bugger blow off only a quid
+                                <br>
+                                grub he legged it porkies tosser young
+                                <br>
+                                delinquent argy-bargy.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Box-4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="box">
+                            <img src="img/features/fe-4.png" alt="icon-1">
+                            <h3 class="h3-bk mb-15 mt-15">Vector Editing</h3>
+                            <p class="p-bk">
+                                Bog cheeky bugger blow off only a quid
+                                <br>
+                                grub he legged it porkies tosser young
+                                <br>
+                                delinquent argy-bargy.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Box-5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="box">
+                            <img src="img/features/fe-5.png" alt="icon-1">
+                            <h3 class="h3-bk mb-15 mt-15">Cloud Service</h3>
+                            <p class="p-bk">
+                                Bog cheeky bugger blow off only a quid
+                                <br>
+                                grub he legged it porkies tosser young
+                                <br>
+                                delinquent argy-bargy.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Box-6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="box">
+                            <img src="img/features/fe-6.png" alt="icon-1">
+                            <h3 class="h3-bk mb-15 mt-15">Iterate at Speed</h3>
+                            <p class="p-bk">
+                                Bog cheeky bugger blow off only a quid
+                                <br>
+                                grub he legged it porkies tosser young
+                                <br>
+                                delinquent argy-bargy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+        <!-- ========== End Features ========== -->
+
+        <!-- ========== Start Get Started ========== -->
+       @* <section class="get-started" id="get-started">
+            <h2 class="h2-w mb-20">GET STARTED</h2>
+            <p class="p-17-w mb-30">designs into interactive prototypes without leaving Bux Saas</p>
+            <a href="#" class="btn-white d-inline-block">Get Started</a>
+        </section>*@
+        <!-- ========== End Get Started ========== -->
+
+        <!-- ========== Start Work ========== -->
+        @*<section class="about m-section-120" id="about">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="h2 mb-20">
+                            Quick & Easy Process</h2>
+                        <p class="p-bk mb-30">That cheeky bugger down the pub squiffy arse spiffing cup
+                            of char on your bike mate, quaint I Jeffrey I don't want no agro you mug zonked
+                            Richard, barney bobby matie boy David a the full monty. Don't get shirty with me
+                            faff about of char on your bike mate, quaint I Jeffrey I don't want no agro you
+                            mug zonked Richard
+                        </p>
+                        <a href="#" class="btn-color d-inline-block">Contact Us</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image work-img pr-4">
+                            <img src="https://via.placeholder.com/516x360" alt="about" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+        <!-- ========== End Work ========== -->
+
+        <!-- ========== Start Benefits ========== -->
+        @*<section class="benefits mb-120" id="benefits">
+            <div class="container text-center">
+                <h2 class="h2 mb-15">Awesome Benefits</h2>
+                <p class="p-bk mb-60">When you buy a dedicated server, you get a machine with resources
+                    <br>
+                    solely allocated to your business.</p>
+                <div class="row">
+                    <!-- Box-1 -->
+                    <div class="col-md-4">
+                        <div class="box">
+                            <img src="img/benefits/icon1.png" alt="">
+                            <h3 class="h3-bk mb-20 mt-15">Awesome design</h3>
+                            <p class="p-bk">Tosser blag bubble and squeak up the
+                                <br>
+                                duff A bit of how's your father blatant
+                                <br>
+                                morish char cuppa.!</p>
+                        </div>
+                    </div>
+                    <!-- Box-2 -->
+                    <div class="col-md-4">
+                        <div class="box">
+                            <img src="img/benefits/icon2.png" alt="">
+                            <h3 class="h3-bk mb-20 mt-15">Easy Customize</h3>
+                            <p class="p-bk">Tosser blag bubble and squeak up the
+                                <br>
+                                duff A bit of how's your father blatant
+                                <br>
+                                morish char cuppa.!</p>
+                        </div>
+                    </div>
+                    <!-- Box-3 -->
+                    <div class="col-md-4">
+                        <div class="box">
+                            <img src="img/benefits/icon3.png" alt="">
+                            <h3 class="h3-bk mb-20 mt-15">Extreme Security</h3>
+                            <p class="p-bk">Tosser blag bubble and squeak up the
+                                <br>
+                                duff A bit of how's your father blatant
+                                <br>
+                                morish char cuppa.!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+        <!-- ========== End Benefits ========== -->
+
+        <!-- ========== Start Video ========== -->
+        @*<section class="video">
+            <div class="container text-center">
+                <div class="video-icon">
+                    <div class="icon-abs">
+                        <a
+                            href="https://www.youtube.com/watch?v=S6lzo-OWoqI"
+                            class="icon pulse expand video-link">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+        <!-- ========== End Video ========== -->
+
+        <!-- ========== Start Portfolio ========== -->
+       @* <section class="portfolio">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Box-1 -->
+                    <div class="col-lg-2 col-sm-6 p-0">
+                        <div class="box m-0">
+                            <div class="single-portfolio-item ">
+                                <img src="https://via.placeholder.com/317x444" alt="" class="img-fluid">
+                                <div class="overlay text-center">
+                                    <div class="content">
+                                        <h3>Brex Logo</h3>
+                                        <p>Brand</p>
+                                        <a href="https://via.placeholder.com/317x444" class="image-link">
+                                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Box-2 -->
+                    <div class="col-lg-2 col-sm-6 p-0">
+                        <div class="box m-0">
+                            <div class="single-portfolio-item ">
+                                <img src="https://via.placeholder.com/317x444" alt="" class="img-fluid">
+                                <div class="overlay text-center">
+                                    <div class="content">
+                                        <h3>Brex Logo</h3>
+                                        <p>Brand</p>
+                                        <a href="https://via.placeholder.com/317x444" class="image-link">
+                                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Box-3 -->
+                    <div class="col-lg-2 col-sm-6 p-0">
+                        <div class="box m-0">
+                            <div class="single-portfolio-item ">
+                                <img src="https://via.placeholder.com/317x444" alt="" class="img-fluid">
+                                <div class="overlay text-center">
+                                    <div class="content">
+                                        <h3>Brex Logo</h3>
+                                        <p>Brand</p>
+                                        <a href="https://via.placeholder.com/317x444" class="image-link">
+                                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Box-4 -->
+                    <div class="col-lg-2 col-sm-6 p-0">
+                        <div class="box p-0">
+                            <div class="single-portfolio-item ">
+                                <img src="https://via.placeholder.com/317x444" alt="" class="img-fluid">
+                                <div class="overlay text-center">
+                                    <div class="content">
+                                        <h3>Brex Logo</h3>
+                                        <p>Brand</p>
+                                        <a href="https://via.placeholder.com/317x444" class="image-link">
+                                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Box-5-->
+                    <div class="col-lg-2 col-sm-6 p-0">
+                        <div class="box p-0">
+                            <div class="single-portfolio-item ">
+                                <img src="https://via.placeholder.com/317x444" alt="" class="img-fluid">
+                                <div class="overlay text-center">
+                                    <div class="content">
+                                        <h3>Brex Logo</h3>
+                                        <p>Brand</p>
+                                        <a href="https://via.placeholder.com/317x444" class="image-link">
+                                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Box-6-->
+                    <div class="col-lg-2 col-sm-6 p-0">
+                        <div class="box p-0">
+                            <div class="single-portfolio-item ">
+                                <img src="https://via.placeholder.com/317x444" alt="" class="img-fluid">
+                                <div class="overlay text-center">
+                                    <div class="content">
+                                        <h3>Brex Logo</h3>
+                                        <p>Brand</p>
+                                        <a href="https://via.placeholder.com/317x444" class="image-link">
+                                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+        <!-- ========== End Portfolio ========== -->
+
+        <!-- ========== Start Our Team ========== -->
+        @*<section class="team m-section-120" id="team">
+            <div class="container text-center">
+                <h2 class="h2 mb-15">Professional Team</h2>
+                <p class="p-bk mb-60">When you buy a dedicated server, you get a machine with resources
+                    <br>
+                    solely allocated to your business.</p>
+                <div class="row">
+                    <!-- Box-1 -->
+                    <div class="col-lg-4">
+                        <div class="box bx-shw">
+                            <div class="content">
+                                <img src="https://via.placeholder.com/350x400" alt="team-1" class="img-fluid">
+                                <div class="info">
+                                    <h3 class="h3-blk-sb">Alamin Musa</h3>
+                                    <span class="span-sm">Graphic Designer</span>
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <div class="social">
+                                    <a href="#"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#" id="0"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="icon fa fa-dribbble" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="icon fa fa-behance" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Box-2 -->
+                    <div class="col-lg-4">
+                            <div class="box bx-shw">
+                                <div class="content">
+                                    <img src="https://via.placeholder.com/350x400" alt="team-1" class="img-fluid">
+                                    <div class="info">
+                                        <h3 class="h3-blk-sb">Rabie Elkhair</h3>
+                                        <span class="span-sm">Web Designer</span>
+                                    </div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="social">
+                                        <a href="#"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" id="0"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="icon fa fa-dribbble" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="icon fa fa-behance" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Box-3 -->
+                    <div class="col-lg-4">
+                            <div class="box bx-shw">
+                                <div class="content">
+                                    <img src="https://via.placeholder.com/350x400" alt="team-1" class="img-fluid">
+                                    <div class="info">
+                                        <h3 class="h3-blk-sb">Adil Elsaeed</h3>
+                                        <span class="span-sm">Wordpress Developer</span>
+                                    </div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="social">
+                                        <a href="#"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" id="0"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="icon fa fa-dribbble" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="icon fa fa-behance" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>*@
+        <!-- ========== End Our Team ========== -->
+
+        <!-- ========== Start Testimonials ========== -->
+    <section class="Slider" id="Slider">
+       @* <p>
+            <a href="Sliders/Create">Create New</a>
+        </p>*@
+            <div class ="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+
+
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <!-- Item-1 -->
+                                <div class="carousel-item active text-center">
+                                  @*  <img src="https://svgsilh.com/svg_v2/1280998.svg" alt="" class="center-block team">*@
+                                <h3>0</h3>
+                                    <h4>
+                                    Only 7 steps between you and turning your idea into a complete project
+                                </h4>
+                                   
+                                 
+                                </div>
+                                <!-- Item-2 -->
+                                <div class="carousel-item text-center">
+                                    @*<img src="https://via.placeholder.com/90x90" alt="" class="center-block team">*@
+                                <h3>
+                                    step 1
+                                </h3>
+                                    <h4>
+                                    Know all the requirements of your project
+                                </h4>
+                                    
+                                </div>
+                                <!-- Item-3 -->
+                                <div class="carousel-item text-center">
+                                   @* <img src="https://via.placeholder.com/90x90" alt="" class="center-block team">*@
+                                <h3>
+                                   step 2
+                
+                                </h3>
+                                    <h4> 
+                                    Project analysis and technical and financial presentation
+                                </h4>
+                                    
+                                   
+                                </div>
+                                <!-- Item-4 -->
+                                <div class="carousel-item text-center">
+                                    @*<img src="https://via.placeholder.com/90x90" alt="" class="center-block team">*@
+                                <h3>
+                                    step 3
+                                </h3>
+                                    <h4>
+                                    Design a complete simulation of the user experience
+                                </h4>
+                                    
+                                   
+                                </div>
+                                <!-- Item-5 -->
+                                <div class="carousel-item text-center">
+                                   @* <img src="https://via.placeholder.com/90x90" alt="" class="center-block team">*@
+                                <h3> step 4</h3>
+                                    <h4>
+                                    Interactive user interface design
+                                </h4>
+                                    
+                                   
+                                </div>
+                                <!-- Item-6 -->
+                                <div class="carousel-item text-center">
+                                  @*  <img src="https://via.placeholder.com/90x90" alt="" class="center-block team">*@
+                                <h3> step 5</h3>
+                                    <h4>
+                                    Front-end and back-end programming and connectivity
+                                </h4>
+                                    
+                                   
+                                </div>
+                                <!-- Item-7 -->
+                                <div class="carousel-item text-center">
+                                  @*  <img src="https://via.placeholder.com/90x90" alt="" class="center-block team">*@
+                                <h3> step 6</h3>
+                                    <h4>
+                                    Conducting technical tests and quality assurance
+                                </h4>
+                                    
+                                   
+                                </div>
+                                <!-- Item-8 -->
+                                <div class="carousel-item text-center">
+                                   @* <img src="https://via.placeholder.com/90x90" alt="" class="center-block team">*@
+                                <h3> step 7</h3>
+                                    <h4>
+                                    Handing over the project and starting the actual operation
+                                </h4>
+                                    
+                                   
+                                </div>
+                                
+
+                            </div>
+                            <a
+                                class="carousel-control-prev control"
+                                data-target="#carouselExampleIndicators"
+                                role="button"
+                                data-slide="prev">
+                                <span
+                                    class="fa fa-angle-left icon d-flex align-items-center justify-content-center"
+                                    aria-hidden="true"></span>
+                                <span class="sr-only ">Previous</span>
+                            </a>
+                            <a
+                                class="carousel-control-next control"
+                                data-target="#carouselExampleIndicators"
+                                role="button"
+                                data-slide="next">
+                                <span
+                                    class="fa fa-angle-right icon d-flex align-items-center justify-content-center"
+                                    aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="contact" id="contact">
+        <div class="container text-center">
+            <h2 class="h2 mb-15">Connect Us</h2>
+
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="Enter Your First Name">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="Enter Your Last Name">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control" placeholder="Enter Your Email">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="Enter Your PhoneNumber">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="datetime" class="form-control" placeholder="Enter Your DOB">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Enter Your Message"></textarea>
+                        </div>
+                        <button class="btn btn-info" type="submit">Send Now!</button>
+                    </form>
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- ========== End Testimonials ========== -->
+
+
+        <!-- ========== Start About ========== -->
+       @* <section class="about m-section-120" id="about">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6">
+                            <div class="image pr-4">
+                                <img src="https://via.placeholder.com/516x391" alt="about" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="h2 mb-20">Creative Marketing Solution</h2>
+                            <p class="p-bk mb-30">The professional company was established in 2004 and since then it is one of the leading companies in the field of developing software, web applications and websites. We produce technical solutions for different business sectors characterized by a professional, flexible and easy-to-use interface. And not only that, we also provide our customers with unique and elegant designs for websites, and we also provide them with highly efficient hosting services, which enables them to stand out in the Internet space.
+
+The professionalism of the professional lies in providing simple and effective technical systems to our customers, which allowed us to expand our activities and improve the quality of our products within a short period of time. Softex is currently moving towards producing web systems and applications that depend mainly on the Internet.
+                            </p>
+                            <a href="#" class="btn-color d-inline-block">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>*@
+            <!-- ========== End About ========== -->
+
+            <!-- ========== Start Price ========== -->
+            @*<section class="price mb-120" id="price">
+                <div class="container text-center">
+                        <h2 class="h2 mb-15">Table Price</h2>
+                        <p class="p-bk mb-60">When you buy a dedicated server, you get a machine with resources
+                            <br>
+                            solely allocated to your business.</p>
+
+                            <div class="row">
+                                <!-- Box-1 -->
+                                <div class="col-lg-4">
+                                    <div class="box bx-shw">
+                                        <h3 class="h3-bk mb-30">Basic</h3>
+                                        <img src="img/price/1.svg" alt="" class="img-fluid w-80">
+                                        <h4>15<span>$</span></h4>
+                                        <h5>per month</h5>
+                                        <ul>
+                                            <li>5GB Storage</li>
+                                            <li>Unlimited Domains</li>
+                                            <li>Awesome Support</li>
+                                            <li>Clean Cpanel</li>
+                                        </ul>
+                                        <a href="#" class="btn-color d-inline-block">Get Started</a>
+                                    </div>
+                                </div>
+                                <!-- Box-2 -->
+                                <div class="col-lg-4">
+                                        <div class="box bx-shw">
+                                            <h3 class="h3-bk mb-30">Ultimate</h3>
+                                            <img src="img/price/2.svg" alt="" class="img-fluid w-80">
+                                            <h4>25<span>$</span></h4>
+                                            <h5>per month</h5>
+                                            <ul>
+                                               <li>5GB Storage</li>
+                                            <li>Unlimited Domains</li>
+                                            <li>Awesome Support</li>
+                                            <li>Clean Cpanel</li>
+                                            </ul>
+                                            <a href="#" class="btn-color d-inline-block">Get Started</a>
+                                        </div>
+                                    </div>
+                                    <!-- Box-3 -->
+                                <div class="col-lg-4">
+                                        <div class="box bx-shw">
+                                            <h3 class="h3-bk mb-30">Professional</h3>
+                                            <img src="img/price/3.svg" alt="" class="img-fluid w-80">
+                                            <h4>45<span>$</span></h4>
+                                            <h5>per month</h5>
+                                            <ul>
+                                               <li>5GB Storage</li>
+                                            <li>Unlimited Domains</li>
+                                            <li>Awesome Support</li>
+                                            <li>Clean Cpanel</li>
+                                            </ul>
+                                            <a href="#" class="btn-color d-inline-block">Get Started</a>
+                                        </div>
+                                    </div>
+                            </div>
+                </div>
+
+            </section>*@
+            <!-- ========== End Price ========== -->
+
+
+            <!-- ========== Start Contact ========== -->
+            @*<section class="contact" id="contact">
+                    <div class="container text-center">
+                            <h2 class="h2 mb-15">Keep In Touch</h2>
+                            <p class="p-bk mb-60">When you buy a dedicated server, you get a machine with resources
+                                <br>
+                                solely allocated to your business.</p>
+                        <div class="row">
+                            <div class="col-md-6 offset-md-3">
+        
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" placeholder="Name">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+                                    </div>
+                                    <button class="btn btn-block" type="submit">Send Now!</button>
+                                </form>*@
+                                <main role="main" class="pb-3">
+                                        @RenderBody()
+                                        </main>
+                           @* </div>
+                        </div>
+                    </div>
+                </section>*@
+            <!-- ========== End Contact ========== -->
+
+            <!-- ========== Start Footer ========== -->
+
+            <footer class="footer">
+        <div class="col text-left header-top-left d-none d-lg-block">
+            @*<div class="header-top-social">
+                <span class="social-text text-upper">Follow us on:</span>
+                <ul class="mb-0">
+                    <li class="list-inline-item"><a class="hdr-facebook" href="@SettingsService.GetSetting(SettingsKey.Facebook)"><i class="ecicon eci-facebook"></i></a></li>
+                    <li class="list-inline-item"><a class="hdr-twitter" href="@SettingsService.GetSetting(SettingsKey.Twitter)"><i class="ecicon eci-twitter"></i></a></li>
+                    <li class="list-inline-item"><a class="hdr-instagram" href="@SettingsService.GetSetting(SettingsKey.Instagram)"><i class="ecicon eci-instagram"></i></a></li>
+                    <li class="list-inline-item"><a class="hdr-linkedin" href="@SettingsService.GetSetting(SettingsKey.Linkedin)"><i class="ecicon eci-linkedin"></i></a></li>
+                </ul>
+            </div>*@
+        </div>
+
+        <div class="col-sm-12 col-lg-2 ec-footer-cont-social mx-auto">
+            <div class="ec-footer-contact ">
+                <div class="ec-footer-widget ">
+                    <h4 class="ec-footer-heading ">Contact</h4>
+                    <div class="ec-footer-links ">
+                        <ul class="align-items-center ">
+                            <li class="ec-footer-link ec-foo-location">
+                                <span>
+                                    <img src="/icons/foo-location.svg"
+                                         class="svg_img foo_svg" alt="" />
+                                </span>
+                                <p>@SettingsService.GetSetting(SettingsKey.Address)</p>
+                            </li>
+                            <br />
+                            <li class="ec-footer-link ec-foo-call ">
+                                <span>
+                                    <img src="/icons/foo-wp.svg" class="svg_img foo_svg "
+                                         alt="" />
+                                </span><a href="tel:@SettingsService.GetSetting(SettingsKey.WhatsApp )">@SettingsService.GetSetting(SettingsKey.WhatsApp )</a>
+                            </li>
+                            <br />
+                            <li class="ec-footer-link ec-foo-mail">
+                                <span>
+                                    <img src="/icons/foo-mail.svg" class="svg_img foo_svg"
+                                         alt="" />
+                                </span><a href="mailto:@SettingsService.GetSetting(SettingsKey.Email)">@SettingsService.GetSetting(SettingsKey.Email)</a>
+                                </li>
+                            <br />
+                            <li class="ec-footer-link ec-foo-mail">
+                                <span>
+                                    <img src="/icons/instagram.png" class="svg_img foo_svg"
+                                         alt="" />
+                                </span><a href="mailto:@SettingsService.GetSetting(SettingsKey.Instagram)">@SettingsService.GetSetting(SettingsKey.Instagram)</a>
+                            </li>
+                            <br />
+                            <li class="ec-footer-link ec-foo-mail">
+                                <span>
+                                    <img src="/icons/facebook.png" class="svg_img foo_svg"
+                                         alt="" />
+                                </span><a href="mailto:@SettingsService.GetSetting(SettingsKey.Facebook)">@SettingsService.GetSetting(SettingsKey.Facebook)</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ec-footer-social">
+                @*<div class="ec-footer-widget">
+                    <h4 class="ec-footer-heading marg-b-0 s-head">Follow Us</h4>
+                    <div class="ec-footer-links">
+                        <ul class="align-items-center">
+                            <li class="ec-footer-link">
+                                <a href="@SettingsService.GetSetting(SettingsKey.Instagram)">
+                                    <i class="ecicon eci-instagram"
+                                       aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="ec-footer-link">
+                                <a href="@SettingsService.GetSetting(SettingsKey.Twitter)">
+                                    <i class="ecicon eci-twitter-square"
+                                       aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="ec-footer-link">
+                                <a href="@SettingsService.GetSetting(SettingsKey.Facebook)">
+                                    <i class="ecicon eci-facebook-square"
+                                       aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="ec-footer-link">
+                                <a href="@SettingsService.GetSetting(SettingsKey.Linkedin)">
+                                    <i class="ecicon eci-linkedin-square"
+                                       aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>*@
+            </div>
+        </div>
+                </footer>
+
+        <!-- ========== JS ========== -->
+         <footer class="footer">
+        <div class="container text-center text-white">
+  
+        </div>
+    </footer>
+    <!-- ========== End Footer ========== -->
+    <!-- ========== JS ========== -->
+    <script src="js/plugins/jquery-3.3.1.min.js"></script>">
+    <script src="js/plugins/popper.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <!-- Particels JS -->
+    <script src="js/plugins/particles.min.js"></script>
+    <script src="js/plugins/app.js"></script>
+    <!-- Smooth Scrolling -->
+    <script src="js/plugins/jquery.smoothscroll.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+
+   
+<script src="~/js/plugins/jquery-3.3.1.min.js"></script>
+    <script src="~/js/plugins/popper.min.js"></script>
+        <script src="~/js/plugins/bootstrap.min.js"></script>
+        
+        <!-- Particels JS -->
+    <script src="~/js/plugins/bootstrap.min.js"></script>
+    <script src="~/js/plugins/app.js"></script>
+       
+        <!-- Smooth Scrolling -->
+    <script src="~/js/plugins/jquery.smoothscroll.min.js"></script>
+   
+       
+        <!-- Magnific Popup -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/main.js"></script>
+       @RenderSection("Scripts", required: false)
+    </body>
+</html>
